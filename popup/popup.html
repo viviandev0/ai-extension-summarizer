@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="pageTitle">Summarizer</h1>
+      <p id="status" class="subtext">Ready to distill page content</p>
+    </header>
+
+    <main>
+      <!-- Action Button -->
+      <button id="summarizeBtn">Summarize Page</button>
+
+      <!-- Loading State -->
+      <div id="loader" class="hidden">
+        <div class="spinner"></div>
+        <p>Distilling insights...</p>
+      </div>
+
+      <!-- Summary Output -->
+      <div id="outputArea" class="hidden">
+        <div class="divider"></div>
+        <div id="summaryContent"></div>
+        <div class="action-footer">
+          <button id="copyBtn" class="secondary-btn">Copy Summary</button>
+          <button id="resetBtn" class="secondary-btn">Clear</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

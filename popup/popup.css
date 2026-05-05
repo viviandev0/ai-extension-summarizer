@@ -1,0 +1,78 @@
+:root {
+  --bg: #ffffff;
+  --text-main: #1a1a1a;
+  --text-sub: #757575;
+  --accent: #000000;
+  --border: #f0f0f0;
+  --radius: 8px;
+}
+
+body {
+  width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.02em;
+}
+
+.subtext {
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+
+.secondary-btn {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+  padding: 8px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+}
+
+#summaryContent {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.hidden { display: none; }
+
+/* Simple Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 20px auto 10px;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); } }
